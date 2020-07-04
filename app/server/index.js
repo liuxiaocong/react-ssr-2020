@@ -1,7 +1,7 @@
 import express from 'express';
 import compression from 'compression';
 import { renderToString } from "react-dom/server";
-
+//https://www.babeljs.cn/docs/babel-register
 require('@babel/register')();
 
 require('@babel/polyfill')

@@ -1,11 +1,8 @@
 import React from 'react';
 import fs from 'fs';
-const reactDomServer = require('react-dom/server');
 import App from "../src/App";
+const reactDomServer = require('react-dom/server');
 
-const renderPage = function(reactHtml){
-  return reactHtml;
-}
 
 let buildHtml;
 
