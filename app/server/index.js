@@ -1,5 +1,6 @@
 import express from 'express';
 import compression from 'compression';
+import path from 'path';
 import { renderToString } from "react-dom/server";
 //https://www.babeljs.cn/docs/babel-register
 require('@babel/register')();
@@ -15,7 +16,7 @@ require.extensions['.css'] = () => {
 const renderReact = require('./renderReact.js');
 
 const router = express.Router();
-import path from 'path';
+
 
 const app = express();
 app.use(compression());

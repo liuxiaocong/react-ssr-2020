@@ -1,23 +1,29 @@
 import React from 'react';
+import { Route, Switch, NavLink } from 'react-router-dom';
+import Home from './container/home';
+import About from './container/about';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <ul>
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/About">About</NavLink>
+        </li>
+      </ul>
 
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route
+          exact
+          path="/"
+          render={props => <Home />}
+        />
+      </Switch>
     </div>
   );
 }
