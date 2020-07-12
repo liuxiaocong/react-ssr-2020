@@ -12,6 +12,9 @@ require.extensions['.less'] = () => {
 require.extensions['.css'] = () => {
   return;
 };
+require.extensions['.svg'] = () => {
+  return;
+};
 
 const renderReact = require('./renderReact.js');
 

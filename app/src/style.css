@@ -1,3 +1,8 @@
-.li{
-  color: yellow;
+.li {
+  color: red;
+  font-size: 16px;
+}
+
+.li a {
+  color: red;
 }

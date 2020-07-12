@@ -2,15 +2,16 @@ import React from 'react';
 import { Route, Switch, NavLink } from 'react-router-dom';
 import Home from './container/home';
 import About from './container/about';
-import './App.css';
+import appStyle from './App.css';
 import logo from './logo.svg';
+//import pg from './ic_add_alert_black_18dp.png';
 import style from './style.css';
 
 function App() {
   return (
-    <div className={'container'}>
-      <img src={ logo } className={ 'App-logo' }/>
-      <ul className={ 'list' }>
+    <div className={appStyle['container']}>
+      <img src={ logo } className={ appStyle['App-logo'] }/>
+      <ul className={ appStyle['list'] }>
         <li className={style.li}>
           <NavLink to="/">Home</NavLink>
         </li>
@@ -18,7 +19,7 @@ function App() {
           <NavLink to="/About">About</NavLink>
         </li>
       </ul>
-      <div className={ 'wrap' }>
+      <div className={ appStyle['wrap'] }>
         <Switch>
           <Route path="/about" component={ About }/>
           <Route

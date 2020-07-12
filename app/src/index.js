@@ -4,8 +4,10 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.hydrate(
+if(console){
+  console.log("ReactDOM.hydrate");
+}
+ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
