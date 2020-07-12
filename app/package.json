@@ -72,7 +72,9 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "server": "nodemon --exec babel-node server/index.js"
+    "server": "nodemon --exec babel-node server/index.js",
+    "buildServer": "webpack --config webpack.server.config.js",
+    "serverBuild": "nodemon --exec babel-node dist/bundle.js"
   },
   "eslintConfig": {
     "extends": "react-app"
