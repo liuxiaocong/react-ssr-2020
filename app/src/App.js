@@ -3,14 +3,17 @@ import { Route, Switch, NavLink } from 'react-router-dom';
 import Home from './container/home';
 import About from './container/about';
 import appStyle from './App.css';
-import logo from './logo.svg';
-//import pg from './ic_add_alert_black_18dp.png';
+import pg from './ic_add_alert_black_18dp.png';
 import style from './style.css';
+import logo from './logo.svg';
+
+console.log(style);
+console.log(style.locals);
 
 function App() {
   return (
     <div className={appStyle['container']}>
-      <img src={ logo } className={ appStyle['App-logo'] }/>
+      <img src={ pg } className={ appStyle['App-logo'] }/>
       <ul className={ appStyle['list'] }>
         <li className={style.li}>
           <NavLink to="/">Home</NavLink>
