@@ -13,7 +13,14 @@
     ]
   ],
   "plugins": [
-    "@babel/plugin-proposal-class-properties"
+    "@babel/plugin-proposal-class-properties",
+    [
+      "transform-assets-import-to-string",
+      {
+        "baseDir": "/static/media/",
+        "baseUri": "http://localhost:4000"
+      }
+    ]
   ],
   "ignore":[
     "./src/public/"
