@@ -1,0 +1,9 @@
+{
+  "files": {
+    "main.js": "/someLibName.js",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "someLibName.js"
+  ]
+}
